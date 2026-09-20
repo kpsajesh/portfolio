@@ -4,4 +4,4 @@ Simple personal profile website.
 
 ## Run locally
 
-Open `/home/runner/work/portfolio/portfolio/index.html` in a browser.
+Open `index.html` from the repository root in a browser.
