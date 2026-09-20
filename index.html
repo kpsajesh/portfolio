@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KP Sajesh | Profile</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #2563eb;
+        --border: #dbe3f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .container {
+        width: min(960px, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 4rem 0 2rem;
+      }
+
+      .hero,
+      .card-grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .hero {
+        align-items: center;
+      }
+
+      .card,
+      .intro {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 1.5rem;
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+      }
+
+      h1,
+      h2,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.25rem);
+        margin-bottom: 0.75rem;
+      }
+
+      .lead,
+      li,
+      .meta {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        background: #dbeafe;
+        color: var(--accent);
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.85rem 1.2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .button-primary {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .button-secondary {
+        border: 1px solid var(--border);
+        color: var(--text);
+        background: #fff;
+      }
+
+      main {
+        padding-bottom: 3rem;
+      }
+
+      section {
+        margin-bottom: 1.5rem;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      footer {
+        padding: 1rem 0 3rem;
+        text-align: center;
+        color: var(--muted);
+      }
+
+      @media (min-width: 768px) {
+        .hero {
+          grid-template-columns: 2fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <div class="hero">
+        <section class="intro">
+          <span class="badge">Profile Website</span>
+          <h1>Hi, I'm KP Sajesh</h1>
+          <p class="lead">
+            I build clean, user-focused web experiences and enjoy turning ideas
+            into simple, polished digital products.
+          </p>
+          <div class="actions">
+            <a class="button button-primary" href="https://github.com/kpsajesh">View GitHub</a>
+            <a class="button button-secondary" href="#contact">Contact</a>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h2>Quick Info</h2>
+          <p class="meta"><strong>Role:</strong> Web Developer</p>
+          <p class="meta"><strong>Focus:</strong> Frontend, UI, and responsive design</p>
+          <p class="meta"><strong>Location:</strong> Available remotely</p>
+        </aside>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>About Me</h2>
+        <p class="lead">
+          This website introduces my background, highlights my strengths, and
+          makes it easy to get in touch for collaboration opportunities.
+        </p>
+      </section>
+
+      <section class="card-grid">
+        <article class="card">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML, CSS, and JavaScript</li>
+            <li>Responsive web design</li>
+            <li>UI-focused front-end development</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Projects</h2>
+          <ul>
+            <li>Personal portfolio website</li>
+            <li>Landing pages and web interfaces</li>
+            <li>Reusable front-end components</li>
+          </ul>
+        </article>
+
+        <article class="card" id="contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>GitHub: github.com/kpsajesh</li>
+            <li>Share opportunities through GitHub</li>
+            <li>Open to freelance and full-time roles</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 KP Sajesh. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
