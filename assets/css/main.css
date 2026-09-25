@@ -512,7 +512,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0;
   overflow: clip;
 }
 
@@ -524,7 +524,7 @@ section,
   position: relative;
 }
 .section-title {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -565,10 +565,15 @@ section,
   width: 100%;
   min-height: auto;
   position: relative;
-  padding: 40px 0;
+  padding: 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Hero's section-title has no content below it, so drop the extra bottom padding */
+.hero .section-title {
+  padding-bottom: 0;
 }
 
 .hero img {
